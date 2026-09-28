@@ -65,14 +65,14 @@ nav a:hover {
     display: flex;
     align-items: center;
     padding: 60px 7%;
-    background: linear-gradient(
-        rgba(80, 0, 0, 0.75),
-        rgba(139, 0, 0, 0.75)
-    ),
-    url("https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=1600&q=80");
+   background: linear-gradient(
+    rgba(80, 0, 0, 0.35),
+    rgba(139, 0, 0, 0.35)
+),
+url("https://i.ibb.co/C3zb0cLM/Chat-GPT-Image-Sep-28-2026-09-56-18-PM.png");
 
-    background-size: cover;
-    background-position: center;
+background-size: cover;
+background-position: center;
 }
 
 .hero-text {
