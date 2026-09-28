@@ -899,3 +899,112 @@ footer {
         box-shadow: none;
     }
 }
+/* =========================
+   MOBILE RESPONSIVE DESIGN
+   ========================= */
+
+@media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .hero {
+        min-height: 500px;
+        padding: 40px 20px;
+        text-align: center;
+        background-position: center;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero button {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    nav {
+        padding: 15px 20px;
+    }
+
+    nav ul {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .menu {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .food-card {
+        width: 100%;
+    }
+
+    section {
+        padding: 40px 20px;
+    }
+
+    .about,
+    .contact {
+        width: 100%;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .cart-container,
+    .checkout-container,
+    .receipt-container {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .hero {
+        min-height: 450px;
+        padding: 30px 15px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    nav {
+        padding: 12px 15px;
+    }
+
+    nav ul {
+        gap: 6px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    section {
+        padding: 30px 15px;
+    }
+
+    button {
+        max-width: 100%;
+    }
+}
