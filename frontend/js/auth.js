@@ -21,7 +21,7 @@ document
 
             const response =
                 await fetch(
-                    "http://localhost:5000/api/register",
+                    "https://ochuko-banga-soup.onrender.com/api/register",
                     {
                         method: "POST",
 
@@ -79,7 +79,7 @@ document
 
             const response =
                 await fetch(
-                    "http://localhost:5000/api/login",
+                    "https://ochuko-banga-soup.onrender.com/api/login",
                     {
                         method: "POST",
 

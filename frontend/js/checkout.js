@@ -147,7 +147,7 @@ if (!token) {
 }
 
 const response = await fetch(
-    "http://localhost:5000/api/orders",
+    "https://ochuko-banga-soup.onrender.com/api/orders",
     {
         method: "POST",
 
