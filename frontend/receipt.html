@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Order Receipt - Ochuko Banga Soup</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="receipt-page">
+
+        <div class="receipt">
+
+            <div class="receipt-header">
+                <h1>Ochuko Banga Soup</h1>
+                <p>Order Receipt</p>
+            </div>
+
+            <div class="success-message">
+                <h2>Order Successful! 🎉</h2>
+                <p>Thank you for ordering from Ochuko Banga Soup.</p>
+            </div>
+
+            <div class="receipt-info">
+
+                <p>
+                    <strong>Order ID:</strong>
+                    <span id="receipt-order-id">Loading...</span>
+                </p>
+
+                <p>
+                    <strong>Customer:</strong>
+                    <span id="receipt-customer">Loading...</span>
+                </p>
+
+                <p>
+                    <strong>Payment:</strong>
+                    <span id="receipt-payment">Loading...</span>
+                </p>
+
+            </div>
+
+            <hr>
+
+            <h3>Order Items</h3>
+
+            <div id="receipt-items">
+                Loading...
+            </div>
+
+            <hr>
+
+            <div class="receipt-total">
+                <p>
+                    <span>Subtotal:</span>
+                    <strong id="receipt-subtotal">₦0</strong>
+                </p>
+
+                <p>
+                    <span>Delivery:</span>
+                    <strong id="receipt-delivery">₦0</strong>
+                </p>
+
+                <p class="grand-total">
+                    <span>Total:</span>
+                    <strong id="receipt-total">₦0</strong>
+                </p>
+            </div>
+
+            <div class="receipt-actions">
+                <button onclick="window.print()">
+                    Print Receipt
+                </button>
+
+                <a href="index.html">
+                    Back to Home
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/receipt.js"></script>
+
+</body>
+
+</html>

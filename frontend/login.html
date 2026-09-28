@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Customer Account - Ochuko Banga Soup</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="login-page">
+
+    <div class="login-overlay">
+
+        <div class="account-box">
+
+            <a href="index.html" class="back-home">
+                ← Home
+            </a>
+
+            <h1>Ochuko Banga Soup</h1>
+
+            <p class="account-subtitle">
+                Welcome! What would you like to do?
+            </p>
+
+
+            <!-- CHOICE BUTTONS -->
+
+            <div id="account-choice" class="account-choice">
+
+                <button
+                    type="button"
+                    id="show-register"
+                    class="account-choice-btn">
+                    Create Account
+                </button>
+
+                <button
+                    type="button"
+                    id="show-login"
+                    class="account-choice-btn">
+                    Login
+                </button>
+
+            </div>
+
+
+            <!-- REGISTER FORM -->
+
+            <div id="register-section" class="account-form-section">
+
+                <button
+                    type="button"
+                    id="back-from-register"
+                    class="back-button">
+                    ← Back
+                </button>
+
+                <h2>Create Your Account</h2>
+
+                <form id="register-form">
+
+                    <input
+                        type="text"
+                        id="register-name"
+                        placeholder="Full Name"
+                        required>
+
+                    <input
+                        type="email"
+                        id="register-email"
+                        placeholder="Email"
+                        required>
+
+                    <input
+                        type="password"
+                        id="register-password"
+                        placeholder="Password"
+                        required>
+
+                    <button type="submit">
+                        Create Account
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <!-- LOGIN FORM -->
+
+            <div id="login-section" class="account-form-section">
+
+                <button
+                    type="button"
+                    id="back-from-login"
+                    class="back-button">
+                    ← Back
+                </button>
+
+                <h2>Login</h2>
+
+                <form id="login-form">
+
+                    <input
+                        type="email"
+                        id="login-email"
+                        placeholder="Email"
+                        required>
+
+                    <input
+                        type="password"
+                        id="login-password"
+                        placeholder="Password"
+                        required>
+
+                    <button type="submit">
+                        Login
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="js/auth.js"></script>
+
+
+    <script>
+
+        const accountChoice =
+            document.getElementById("account-choice");
+
+        const registerSection =
+            document.getElementById("register-section");
+
+        const loginSection =
+            document.getElementById("login-section");
+
+
+        const showRegister =
+            document.getElementById("show-register");
+
+        const showLogin =
+            document.getElementById("show-login");
+
+
+        const backFromRegister =
+            document.getElementById("back-from-register");
+
+        const backFromLogin =
+            document.getElementById("back-from-login");
+
+
+        // SHOW REGISTER
+
+        showRegister.addEventListener("click", function() {
+
+            accountChoice.style.display = "none";
+
+            registerSection.style.display = "block";
+
+            loginSection.style.display = "none";
+
+        });
+
+
+        // SHOW LOGIN
+
+        showLogin.addEventListener("click", function() {
+
+            accountChoice.style.display = "none";
+
+            loginSection.style.display = "block";
+
+            registerSection.style.display = "none";
+
+        });
+
+
+        // BACK FROM REGISTER
+
+        backFromRegister.addEventListener("click", function() {
+
+            registerSection.style.display = "none";
+
+            accountChoice.style.display = "flex";
+
+        });
+
+
+        // BACK FROM LOGIN
+
+        backFromLogin.addEventListener("click", function() {
+
+            loginSection.style.display = "none";
+
+            accountChoice.style.display = "flex";
+
+        });
+
+    </script>
+
+</body>
+
+</html>
