@@ -1517,22 +1517,23 @@ footer {
     text-decoration: underline;
 }
 
-/* =========================
+/* =====================================
    ADMIN DASHBOARD BACKGROUND
-========================= */
+===================================== */
 
-.admin-dashboard-page {
+body.admin-dashboard-page {
     min-height: 100vh;
+    margin: 0;
 
     background-image:
         linear-gradient(
-            rgba(0, 0, 0, 0.60),
-            rgba(0, 0, 0, 0.60)
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.55)
         ),
         url("https://i.pinimg.com/736x/f8/63/f5/f863f57b3616162e84dfe0831ee89a2d.jpg");
 
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
