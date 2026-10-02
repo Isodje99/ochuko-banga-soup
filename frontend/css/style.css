@@ -1505,4 +1505,14 @@ footer {
 
 .forgot-password-link:hover {
     text-decoration: underline;
+}.admin-login-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.admin-login-link:hover {
+    text-decoration: underline;
 }
