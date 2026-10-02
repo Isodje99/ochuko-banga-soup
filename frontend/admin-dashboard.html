@@ -1,113 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Admin Dashboard | Ochuko Banga Soup</title>
+    <title>Admin Dashboard - Ochuko Banga Soup</title>
 
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="admin-dashboard-page">
 
-    <!-- =========================
-         ADMIN HEADER
-    ========================== -->
-    <header class="admin-header">
+    <header>
+        <h2>Ochuko Banga Soup</h2>
 
-        <div class="admin-header-container">
-
-            <div class="admin-brand">
-                <h2>Ochuko Banga Soup</h2>
-            </div>
-
-            <nav class="admin-nav">
-                <a href="index.html">Home</a>
-
-                <button id="admin-logout">
-                    Logout
-                </button>
-            </nav>
-
-        </div>
-
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#" id="logout-btn">Logout</a>
+        </nav>
     </header>
 
 
-    <!-- =========================
-         ADMIN MAIN CONTENT
-    ========================== -->
     <main class="admin-dashboard">
 
-        <!-- Welcome -->
-        <section class="admin-welcome">
+        <h1>Admin Dashboard</h1>
 
-            <h1>Admin Dashboard</h1>
-
-            <p id="admin-welcome">
-                Welcome, Admin 👋
-            </p>
-
-        </section>
+        <p id="admin-welcome"></p>
 
 
-        <!-- =========================
-             DASHBOARD STATISTICS
-        ========================== -->
-        <section class="admin-stats">
+        <!-- DASHBOARD SUMMARY -->
 
-            <div class="admin-stat-card">
+        <section class="dashboard-cards">
 
+            <div class="dashboard-card">
                 <h3>Total Customers</h3>
-
-                <p id="total-customers">
-                    0
-                </p>
-
+                <p id="customer-count">0</p>
             </div>
 
-
-            <div class="admin-stat-card">
-
+            <div class="dashboard-card">
                 <h3>Total Orders</h3>
-
-                <p id="total-orders">
-                    0
-                </p>
-
+                <p id="order-count">0</p>
             </div>
 
         </section>
 
 
-        <!-- =========================
-             REGISTERED CUSTOMERS
-        ========================== -->
+        <!-- CUSTOMERS -->
+
         <section class="admin-section">
 
             <h2>Registered Customers</h2>
 
-            <div id="customers-list">
-
-                <!-- Customers will be loaded here by JavaScript -->
-
+            <div id="customers-container">
+                Loading customers...
             </div>
 
         </section>
 
 
-        <!-- =========================
-             CUSTOMER ORDERS
-        ========================== -->
+        <!-- ORDERS -->
+
         <section class="admin-section">
 
             <h2>Customer Orders</h2>
 
-            <div id="orders-list">
-
-                <!-- Orders will be loaded here by JavaScript -->
-
+            <div id="orders-container">
+                Loading orders...
             </div>
 
         </section>
@@ -115,10 +74,8 @@
     </main>
 
 
-    <!-- =========================
-         JAVASCRIPT
-    ========================== -->
     <script src="js/admin-dashboard.js"></script>
 
 </body>
+
 </html>

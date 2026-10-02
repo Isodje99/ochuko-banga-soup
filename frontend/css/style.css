@@ -1517,8 +1517,24 @@ footer {
     text-decoration: underline;
 }
 
+
+/* BANGA SOUP ADMIN DASHBOARD BACKGROUND */
+
+body.admin-dashboard-page {
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.55)
+        ),
+        url("https://i.pinimg.com/736x/f8/63/f5/f863f57b3616162e84dfe0831ee89a2d.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 /* =====================================
-   ADMIN DASHBOARD BACKGROUND
+   BANGA SOUP ADMIN DASHBOARD BACKGROUND
 ===================================== */
 
 body.admin-dashboard-page {
@@ -1536,4 +1552,15 @@ body.admin-dashboard-page {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+/* Let the Banga Soup image show through */
+body.admin-dashboard-page .admin-dashboard {
+    background: transparent !important;
+}
+/* ADMIN DASHBOARD TITLE */
+body.admin-dashboard-page .admin-welcome h1,
+body.admin-dashboard-page .admin-welcome p {
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
 }
