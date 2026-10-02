@@ -12,7 +12,7 @@ forgotForm.addEventListener("submit", async function (event) {
     try {
 
         const response = await fetch(
-            "https://ochuko-banga-soupp.onrender.com/api/forgot-password",
+            "https://ochuko-banga-soup.onrender.com/api/forgot-password",
             {
                 method: "POST",
 

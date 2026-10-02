@@ -34,7 +34,7 @@ async function loadCustomers() {
     try {
 
         const response = await fetch(
-            "https://ochuko-banga-soupp.onrender.com/api/admin/users",
+            "https://ochuko-banga-soup.onrender.com/api/admin/users",
             {
                 headers: {
                     "Authorization": "Bearer " + adminToken
@@ -121,7 +121,7 @@ async function loadOrders() {
     try {
 
         const response = await fetch(
-            "https://ochuko-banga-soupp.onrender.com/api/admin/orders",
+            "https://ochuko-banga-soup.onrender.com/api/admin/orders",
             {
                 headers: {
                     "Authorization": "Bearer " + adminToken
