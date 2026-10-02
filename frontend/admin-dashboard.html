@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard - Ochuko Banga Soup</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h2>Ochuko Banga Soup</h2>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#" id="logout-btn">Logout</a>
+        </nav>
+    </header>
+
+
+    <main class="admin-dashboard">
+
+        <h1>Admin Dashboard</h1>
+
+        <p id="admin-welcome"></p>
+
+
+        <!-- DASHBOARD SUMMARY -->
+
+        <section class="dashboard-cards">
+
+            <div class="dashboard-card">
+                <h3>Total Customers</h3>
+                <p id="customer-count">0</p>
+            </div>
+
+            <div class="dashboard-card">
+                <h3>Total Orders</h3>
+                <p id="order-count">0</p>
+            </div>
+
+        </section>
+
+
+        <!-- CUSTOMERS -->
+
+        <section class="admin-section">
+
+            <h2>Registered Customers</h2>
+
+            <div id="customers-container">
+                Loading customers...
+            </div>
+
+        </section>
+
+
+        <!-- ORDERS -->
+
+        <section class="admin-section">
+
+            <h2>Customer Orders</h2>
+
+            <div id="orders-container">
+                Loading orders...
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/admin-dashboard.js"></script>
+
+</body>
+
+</html>
